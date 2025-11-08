@@ -1,0 +1,16 @@
+.myCard{
+    width: 300px;
+    height: 50vh;
+    border: 1px solid red;
+    text-align: center;
+    float: left;
+    background-color: bisque;
+}
+.myCard img{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+/* h1{
+    background-color: aqua;
+} */
