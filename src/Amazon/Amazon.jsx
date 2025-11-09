@@ -13,10 +13,18 @@ const Amazon = () => {
         console.log(afterSraech)
        setProductList(afterSraech)
     }
+    const handlekey = (e)=>{
+        if(e.keyCode==13){
+          let afterSraech = data.filter((elm) =>
+            elm.title.toLowerCase().includes(inpVal.toLowerCase())
+          );
+          setProductList(afterSraech);
+        }
+    }
   return (
     <div className="container">
       <div className="my-2 d-flex align-items-center">
-        <input type="text" onChange={(e) => setInpVal(e.target.value)} />
+        <input type="text" onChange={(e) => setInpVal(e.target.value)} onKeyDown={handlekey} />
         <button className="btn btn-success mx-3" onClick={handleSraech}>
           Search
         </button>
